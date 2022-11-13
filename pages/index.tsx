@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <nav>
       <ul>
-        <Link href="/blog/hello">
-           hello
-        </Link>
+        <li>
+          <Link href="/blog/hello">
+            hello
+          </Link>
+        </li>
       </ul>
     </nav>
 
