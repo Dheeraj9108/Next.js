@@ -1,12 +1,16 @@
 import Link from "next/Link"
 import { useRouter } from "next/router"
-
+import { useEffect } from 'react'
 const Errorpage = () => {
-    const router  = useRouter();
-    const handleinp =()=> {
+    const router = useRouter();
+    const handleinp = () => {
         router.push('/')
     }
-    
+    useEffect(() => {
+        setTimeout(() => {
+            router.push('/')
+        }, 3000)
+    }, [])
     return (
         <>
             <nav>
